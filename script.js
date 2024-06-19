@@ -37,54 +37,6 @@ function submitValue() {
   // console.log(todo)
 }
 
-// let todo = [
-//   {
-//     id: 1,
-//     activity: "wake-up",
-//   },
-//   {
-//     id: 2,
-//     activity: "Prepare breakfast",
-//   },
-//   {
-//     id: 3,
-//     activity: " prepare for work",
-//   },
-//   {
-//     id: 4,
-//     activity: "I am at sheda",
-//   },
-// ];
-
-// let ol = document.createElement("ol");
-// let button = document.querySelector("button");
-
-// let mainDiv = document.querySelector("#main");
-// mainDiv.appendChild(ol);
-
-// const addTodo = function () {
-//   let inputFeild = document.querySelector(".input");
-
-//   let todo1 = inputFeild.value;
-
-//   let lastId = todo[todo.length - 1].id;
-//   let newTodo = {
-//     id: lastId + 1,
-//     activity: todo1,
-//   };
-//   todo.push(newTodo);
-//   let li = document.createElement("li");
-//   li.innerText = todo1;
-//   ol.appendChild(li);
-//   console.log(todo);
-// };
-// for (let i = 0; i < todo.length; i++) {
-//   let li = document.createElement("li");
-//   li.innerText = todo[i].activity;
-//   ol.appendChild(li);
-// }
-// button.addEventListener("click", addTodo);
-
 // array of objects
 const navlists = [
   { name: "home", path: "/" },
@@ -130,28 +82,6 @@ const cards = [
     title: "world",
   },
 ];
-
-// let boxes = document.querySelector(".boxes")
-// cards.map((card)=>{
-//   let divs = document.createElement("div")
-//   let image = document.createElement("img")
-//   let artist = document.createElement("h1")
-//   let title = document.createElement("p")
-
-//   divs.appendChild(image)
-//   divs.appendChild(artist)
-//   divs.appendChild(title)
-
-//   boxes.appendChild(divs)
-//   image.src = card.img
-//   image.style.width = '100px'
-//   artist.textContent = card.artist
-//   title.textContent = card.title
-//   title.style.color = "red"
-//   boxes.style.gap = "4rem"
-//   boxes.style.display = "flex"
-//   divs.style.display = "grid"
-// })
 
 let boxes = document.querySelector(".boxes");
 cards.map((card) => {
@@ -441,175 +371,175 @@ function display() {
   saveDiv = localStorage.getItem("value");
 }
 
-// quiz application
-let jsQuestions = [
-  {
-    id: 1,
-    question: "What is the purpose of the `querySelector()` method?",
-    answer: "a",
-    options: {
-      a: "To select and return the first element that matches a specified CSS selector",
-      b: "To modify the CSS properties of an element",
-      c: "To create a new HTML element",
-      d: "To define a JavaScript function",
-    },
-  },
-  {
-    id: 2,
-    question: "What is the correct syntax for a for loop in JavaScript?",
-    answer: "d",
-    options: {
-      a: "for (let i = 0; i < condition; i++)",
-      b: "for (let i = condition; i > 0; i--)",
-      c: "for (condition; i++)",
-      d: "for (let i = 0; i < condition; i++)",
-    },
-  },
-  {
-    id: 3,
-    question: "Which of the following is NOT a valid data type in JavaScript?",
-    answer: "c",
-    options: {
-      a: "number",
-      b: "string",
-      c: "character",
-      d: "boolean",
-    },
-  },
-  {
-    id: 4,
-    question: "What does the `push()` method do in JavaScript arrays?",
-    answer: "b",
-    options: {
-      a: "Removes the last element from an array",
-      b: "Adds one or more elements to the end of an array and returns the new length",
-      c: "Sorts the elements of an array",
-      d: "Reverses the order of the elements of an array",
-    },
-  },
-  {
-    id: 5,
-    question: "What is the purpose of the `addEventListener()` method?",
-    answer: "a",
-    options: {
-      a: "To attach an event handler function to an HTML element",
-      b: "To create a new HTML element",
-      c: "To modify the CSS properties of an element",
-      d: "To define a JavaScript function",
-    },
-  },
-  {
-    id: 6,
-    question: "What is the purpose of the `typeof` operator?",
-    answer: "To determine the data type of a variable or expression.",
-    options: {
-      a: "To compare two values",
-      b: "To create a new variable",
-      c: "To determine the data type of a variable or expression",
-      d: "To concatenate strings",
-    },
-  },
-  {
-    id: 7,
-    question: "What is an IIFE in JavaScript?",
-    answer:
-      "Immediately Invoked Function Expression, used to create a private scope.",
-    options: {
-      a: "A JavaScript framework",
-      b: "A built-in method",
-      c: "A programming language",
-      d: "Immediately Invoked Function Expression, used to create a private scope",
-    },
-  },
-  {
-    id: 8,
-    question: "What is the purpose of the `this` keyword in JavaScript?",
-    answer: "To refer to the current object.",
-    options: {
-      a: "To declare variables",
-      b: "To perform arithmetic operations",
-      c: "To refer to the current object",
-      d: "To create functions",
-    },
-  },
-  {
-    id: 9,
-    question: "What is a closure in JavaScript?",
-    answer:
-      "A function that has access to its outer scope even after the outer function has finished executing.",
-    options: {
-      a: "A way to style HTML elements",
-      b: "A type of loop",
-      c: "A function that returns a value",
-      d: "A function that has access to its outer scope even after the outer function has finished executing",
-    },
-  },
-  {
-    id: 10,
-    question: "What is the purpose of `JSON.parse()` in JavaScript?",
-    answer: "To parse JSON strings and convert them into JavaScript objects.",
-    options: {
-      a: "To convert a string into an array",
-      b: "To parse JSON strings and convert them into JavaScript objects",
-      c: "To remove an element from an array",
-      d: "To reverse the elements of an array",
-    },
-  },
-  {
-    id: 11,
-    question: "What is the purpose of the `typeof` operator?",
-    answer: "To determine the data type of a variable or expression.",
-    options: {
-      a: "To compare two values",
-      b: "To create a new variable",
-      c: "To determine the data type of a variable or expression",
-      d: "To concatenate strings",
-    },
-  },
-  {
-    id: 12,
-    question: "What is an IIFE in JavaScript?",
-    answer:
-      "Immediately Invoked Function Expression, used to create a private scope.",
-    options: {
-      a: "A JavaScript framework",
-      b: "A built-in method",
-      c: "A programming language",
-      d: "Immediately Invoked Function Expression, used to create a private scope",
-    },
-  },
-  {
-    id: 13,
-    question: "What is the purpose of the `this` keyword in JavaScript?",
-    answer: "To refer to the current object.",
-    options: {
-      a: "To declare variables",
-      b: "To perform arithmetic operations",
-      c: "To refer to the current object",
-      d: "To create functions",
-    },
-  },
-  {
-    id: 14,
-    question: "What is a closure in JavaScript?",
-    answer:
-      "A function that has access to its outer scope even after the outer function has finished executing.",
-    options: {
-      a: "A way to style HTML elements",
-      b: "A type of loop",
-      c: "A function that returns a value",
-      d: "A function that has access to its outer scope even after the outer function has finished executing",
-    },
-  },
-  {
-    id: 15,
-    question: "What is the purpose of `JSON.parse()` in JavaScript?",
-    answer: "To parse JSON strings and convert them into JavaScript objects.",
-    options: {
-      a: "To convert a string into an array",
-      b: "To parse JSON strings and convert them into JavaScript objects",
-      c: "To remove an element from an array",
-      d: "To reverse the elements of an array",
-    },
-  },
-];
+// // quiz application
+// let jsQuestions = [
+//   {
+//     id: 1,
+//     question: "What is the purpose of the `querySelector()` method?",
+//     answer: "a",
+//     options: {
+//       a: "To select and return the first element that matches a specified CSS selector",
+//       b: "To modify the CSS properties of an element",
+//       c: "To create a new HTML element",
+//       d: "To define a JavaScript function",
+//     },
+//   },
+//   {
+//     id: 2,
+//     question: "What is the correct syntax for a for loop in JavaScript?",
+//     answer: "d",
+//     options: {
+//       a: "for (let i = 0; i < condition; i++)",
+//       b: "for (let i = condition; i > 0; i--)",
+//       c: "for (condition; i++)",
+//       d: "for (let i = 0; i < condition; i++)",
+//     },
+//   },
+//   {
+//     id: 3,
+//     question: "Which of the following is NOT a valid data type in JavaScript?",
+//     answer: "c",
+//     options: {
+//       a: "number",
+//       b: "string",
+//       c: "character",
+//       d: "boolean",
+//     },
+//   },
+//   {
+//     id: 4,
+//     question: "What does the `push()` method do in JavaScript arrays?",
+//     answer: "b",
+//     options: {
+//       a: "Removes the last element from an array",
+//       b: "Adds one or more elements to the end of an array and returns the new length",
+//       c: "Sorts the elements of an array",
+//       d: "Reverses the order of the elements of an array",
+//     },
+//   },
+//   {
+//     id: 5,
+//     question: "What is the purpose of the `addEventListener()` method?",
+//     answer: "a",
+//     options: {
+//       a: "To attach an event handler function to an HTML element",
+//       b: "To create a new HTML element",
+//       c: "To modify the CSS properties of an element",
+//       d: "To define a JavaScript function",
+//     },
+//   },
+//   {
+//     id: 6,
+//     question: "What is the purpose of the `typeof` operator?",
+//     answer: "To determine the data type of a variable or expression.",
+//     options: {
+//       a: "To compare two values",
+//       b: "To create a new variable",
+//       c: "To determine the data type of a variable or expression",
+//       d: "To concatenate strings",
+//     },
+//   },
+//   {
+//     id: 7,
+//     question: "What is an IIFE in JavaScript?",
+//     answer:
+//       "Immediately Invoked Function Expression, used to create a private scope.",
+//     options: {
+//       a: "A JavaScript framework",
+//       b: "A built-in method",
+//       c: "A programming language",
+//       d: "Immediately Invoked Function Expression, used to create a private scope",
+//     },
+//   },
+//   {
+//     id: 8,
+//     question: "What is the purpose of the `this` keyword in JavaScript?",
+//     answer: "To refer to the current object.",
+//     options: {
+//       a: "To declare variables",
+//       b: "To perform arithmetic operations",
+//       c: "To refer to the current object",
+//       d: "To create functions",
+//     },
+//   },
+//   {
+//     id: 9,
+//     question: "What is a closure in JavaScript?",
+//     answer:
+//       "A function that has access to its outer scope even after the outer function has finished executing.",
+//     options: {
+//       a: "A way to style HTML elements",
+//       b: "A type of loop",
+//       c: "A function that returns a value",
+//       d: "A function that has access to its outer scope even after the outer function has finished executing",
+//     },
+//   },
+//   {
+//     id: 10,
+//     question: "What is the purpose of `JSON.parse()` in JavaScript?",
+//     answer: "To parse JSON strings and convert them into JavaScript objects.",
+//     options: {
+//       a: "To convert a string into an array",
+//       b: "To parse JSON strings and convert them into JavaScript objects",
+//       c: "To remove an element from an array",
+//       d: "To reverse the elements of an array",
+//     },
+//   },
+//   {
+//     id: 11,
+//     question: "What is the purpose of the `typeof` operator?",
+//     answer: "To determine the data type of a variable or expression.",
+//     options: {
+//       a: "To compare two values",
+//       b: "To create a new variable",
+//       c: "To determine the data type of a variable or expression",
+//       d: "To concatenate strings",
+//     },
+//   },
+//   {
+//     id: 12,
+//     question: "What is an IIFE in JavaScript?",
+//     answer:
+//       "Immediately Invoked Function Expression, used to create a private scope.",
+//     options: {
+//       a: "A JavaScript framework",
+//       b: "A built-in method",
+//       c: "A programming language",
+//       d: "Immediately Invoked Function Expression, used to create a private scope",
+//     },
+//   },
+//   {
+//     id: 13,
+//     question: "What is the purpose of the `this` keyword in JavaScript?",
+//     answer: "To refer to the current object.",
+//     options: {
+//       a: "To declare variables",
+//       b: "To perform arithmetic operations",
+//       c: "To refer to the current object",
+//       d: "To create functions",
+//     },
+//   },
+//   {
+//     id: 14,
+//     question: "What is a closure in JavaScript?",
+//     answer:
+//       "A function that has access to its outer scope even after the outer function has finished executing.",
+//     options: {
+//       a: "A way to style HTML elements",
+//       b: "A type of loop",
+//       c: "A function that returns a value",
+//       d: "A function that has access to its outer scope even after the outer function has finished executing",
+//     },
+//   },
+//   {
+//     id: 15,
+//     question: "What is the purpose of `JSON.parse()` in JavaScript?",
+//     answer: "To parse JSON strings and convert them into JavaScript objects.",
+//     options: {
+//       a: "To convert a string into an array",
+//       b: "To parse JSON strings and convert them into JavaScript objects",
+//       c: "To remove an element from an array",
+//       d: "To reverse the elements of an array",
+//     },
+//   },
+// ];
