@@ -347,7 +347,9 @@ function addBooks(title, author) {
   });
 
   yesSave.addEventListener("click", function () {
-    saveDiv.style.display = "block";
+    let book = { title: title, author: author };
+    localStorage.setItem("savedBook", JSON.stringify(book));
+
     let join = document.createElement("p");
     let div = document.createElement("div");
     let h1 = document.createElement("h1");
@@ -366,10 +368,6 @@ function addBooks(title, author) {
   return `the title is ${title} an author is ${author}`;
 }
 addBooks("Hidden", "Man");
-function display() {
-  localStorage.setItem("value", h1);
-  saveDiv = localStorage.getItem("value");
-}
 
 // // quiz application
 // let jsQuestions = [
